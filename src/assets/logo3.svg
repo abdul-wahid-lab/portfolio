@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#075CFF"/>
+      <stop offset=".5" stop-color="#087DFF"/>
+      <stop offset="1" stop-color="#19E0F5"/>
+    </linearGradient>
+    <linearGradient id="w" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1247FF"/>
+      <stop offset=".55" stop-color="#078DFF"/>
+      <stop offset="1" stop-color="#18D8EF"/>
+    </linearGradient>
+    <radialGradient id="inside">
+      <stop offset="0" stop-color="#07162B"/>
+      <stop offset="1" stop-color="#010611"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Circular badge -->
+  <circle cx="500" cy="500" r="475" fill="url(#inside)"/>
+  <circle cx="500" cy="500" r="475" fill="none" stroke="url(#ring)" stroke-width="18"/>
+
+  <!-- White A -->
+  <path fill="#fff" d="
+    M170 650 L365 180 L430 180 L625 650 L515 650
+    L470 535 L325 535 L280 650 Z
+    M355 440 L440 440 L397 325 Z"/>
+
+  <!-- Code mark -->
+  <g fill="none" stroke="#09C8FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 430 L230 465 L270 500"/>
+    <path d="M335 430 L375 465 L335 500"/>
+    <path d="M320 415 L285 515"/>
+  </g>
+
+  <!-- W / digital ascent -->
+  <path fill="url(#w)" d="
+    M490 650 L570 515 L650 650 L755 400 L835 400
+    L715 650 L650 650 L570 535 L535 650 Z"/>
+  <path fill="url(#w)" d="M730 650 L815 455 L875 455 L790 650 Z"/>
+
+  <!-- Pixel dissolution -->
+  <g fill="#0ACDF1">
+    <rect x="800" y="360" width="22" height="22"/>
+    <rect x="835" y="325" width="32" height="32"/>
+    <rect x="875" y="350" width="18" height="18"/>
+    <rect x="850" y="290" width="26" height="26"/>
+    <rect x="895" y="270" width="18" height="18"/>
+    <rect x="920" y="315" width="12" height="12"/>
+    <rect x="905" y="375" width="14" height="14"/>
+    <rect x="930" y="350" width="10" height="10"/>
+  </g>
+</svg>
