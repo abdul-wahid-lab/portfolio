@@ -19,9 +19,7 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  projectPlaceholder,
   threejs,
 } from "../assets";
 
@@ -215,7 +213,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: projectPlaceholder,
     source_code_link: "https://github.com/abdul-wahid-lab/fyp-project-Pakistan-sign-language-detection-system",
   },
   {
@@ -236,7 +234,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: projectPlaceholder,
     source_code_link: "https://github.com/abdul-wahid-lab/tumor-detection-system",
   },
   {
@@ -257,10 +255,72 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: projectPlaceholder,
     source_code_link: "https://github.com/abdul-wahid-lab/maze-solving-ai-agent",
   },
- 
+  {
+    name: "Smart Electricity Bill Predictor",
+    description:
+      "AI-powered desktop application that predicts monthly electricity bills using a Random Forest regression model with SHAP explainability, built with Python and Tkinter.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tkinter",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: projectPlaceholder,
+    source_code_link: "https://github.com/abdul-wahid-lab/smart-electricity-bill-predictor",
+  },
+  {
+    name: "Seasons Slider",
+    description:
+      "Fullscreen four-season image slider featuring a double-exposure canvas transition effect, built with vanilla HTML, CSS, and JavaScript with no build tools.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "canvas",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: projectPlaceholder,
+    source_code_link: "https://github.com/abdul-wahid-lab/seasons-slider",
+  },
+  {
+    name: "Portfolio — Mehedi Hasan",
+    description:
+      "A personal portfolio website built and delivered as a freelance project, developed with React and Create React App.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: projectPlaceholder,
+    source_code_link: "https://github.com/abdul-wahid-lab/portfolio-Mehedi-Hasan",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
