@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import HireMeModal from "./HireMeModal";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showHireMe, setShowHireMe] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,23 +66,23 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <a
-            href='#contact'
-            onClick={() => setActive("Contact")}
+          <button
+            type='button'
+            onClick={() => setShowHireMe(true)}
             className='bg-[#915EFF] hover:bg-[#7a3ff0] transition-colors text-white text-[16px] font-medium px-6 py-2 rounded-full'
           >
             Hire Me
-          </a>
+          </button>
         </div>
 
         <div className='sm:hidden flex flex-1 justify-end items-center gap-4'>
-          <a
-            href='#contact'
-            onClick={() => setActive("Contact")}
+          <button
+            type='button'
+            onClick={() => setShowHireMe(true)}
             className='bg-[#915EFF] hover:bg-[#7a3ff0] transition-colors text-white text-[14px] font-medium px-4 py-2 rounded-full'
           >
             Hire Me
-          </a>
+          </button>
 
           <img
             src={toggle ? close : menu}
@@ -113,6 +115,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {showHireMe && <HireMeModal onClose={() => setShowHireMe(false)} />}
     </nav>
   );
 };
