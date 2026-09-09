@@ -49,21 +49,39 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
+        <div className='hidden sm:flex flex-row items-center gap-10'>
+          <ul className='list-none flex flex-row gap-10'>
+            {navLinks.map((nav) => (
+              <li
+                key={nav.id}
+                className={`${
+                  active === nav.title ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+          <a
+            href='#contact'
+            onClick={() => setActive("Contact")}
+            className='bg-[#915EFF] hover:bg-[#7a3ff0] transition-colors text-white text-[16px] font-medium px-6 py-2 rounded-full'
+          >
+            Hire Me
+          </a>
+        </div>
+
+        <div className='sm:hidden flex flex-1 justify-end items-center gap-4'>
+          <a
+            href='#contact'
+            onClick={() => setActive("Contact")}
+            className='bg-[#915EFF] hover:bg-[#7a3ff0] transition-colors text-white text-[14px] font-medium px-4 py-2 rounded-full'
+          >
+            Hire Me
+          </a>
+
           <img
             src={toggle ? close : menu}
             alt='menu'
